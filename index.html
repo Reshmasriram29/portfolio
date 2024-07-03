@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshma S - Software Developer & Data Scientist</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        :root {
+            --primary-color: #6C63FF;
+            --secondary-color: #FF6B6B;
+            --accent-color: #4ECDC4;
+            --text-color: #333;
+            --bg-color: #F7F7F7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header-text p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: var(--secondary-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .project-grid, .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card, .skill-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover, .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3, .skill-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .achievement-list {
+            list-style-type: none;
+        }
+
+        .achievement-list li {
+            background: white;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            color: var(--primary-color);
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="header-text">
+                <h1>Reshma S</h1>
+                <p>Software Developer & Data Scientist</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm Reshma S from the EEE department, having completed my graduation from Sri Sairam Institute Of Technology. I possess strong technical skills, leadership abilities, and excellent communication skills.</p>
+                <div class="social-links">
+                    <a href="mailto:reshusri2912@gmail.com">📧</a>
+                    <a href="https://www.linkedin.com/in/reshma-sriram-5302bb200/" target="_blank">🔗</a>
+                    <a href="https://github.com/Reshmasriram29" target="_blank">🐙</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Todo-List</h3>
+                        <p>A simple yet effective tool for task management, demonstrating fundamental Python programming concepts.</p>
+                        <a href="https://github.com/Reshmasriram29/todo-list.git" target="_blank">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Contact Book</h3>
+                        <p>An application for managing contacts, showcasing file handling and data manipulation in Python.</p>
+                        <a href="https://github.com/Reshmasriram29/todo-list.git" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <div class="container">
+                <h2>Achievements</h2>
+                <ul class="achievement-list">
+                    <li>Insperathon Winner - Lifi Integration technology</li>
+                    <li>Paper Publication - IEEE Xplore 2022 (Pipeline climbing Robot)</li>
+                    <li>Paper Publication - International Conference (IEEE)</li>
+                    <li>First Prize - Project Presentation - Wireless PT Technology</li>
+                    <li>IEEE Xtreme Coding Competition - All India Rank 25, World Rank 250</li>
+                    <li>Patent Registration - Lifi Technology</li>
+                    <li>Niral Government Project Winner</li>
+                    <li>Smart India Hackathon Finalist</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">Python</div>
+                    <div class="skill-card">SQL</div>
+                    <div class="skill-card">DBMS</div>
+                    <div class="skill-card">HTML</div>
+                    <div class="skill-card">CSS</div>
+                    <div class="skill-card">Networking</div>
+                    <div class="skill-card">Cloud Computing</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Reshma S. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
